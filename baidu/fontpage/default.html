@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>后台首页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../style/bootstrap-3.3.5/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../style/stylesheet.css">
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/back.js"></script>
+    <!-- STYLESHEETS -->
+    <!--[if lt IE 9]><script src="js/flot/excanvas.min.js"></script><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script><![endif]-->
+</head>
+
+<body>
+    <div class="wrap">
+        <!--顶部导航-->
+        <header class="navbar clearfix" id="header">
+            <div class="container">
+                <div class="navbar-brand">
+                    <!--LOGO -->
+                    <a href="index.html">
+                        <img src="../img/newslogo.png" alt="Cloud Admin Logo" class="img-responsive" height="30" width="120">
+                    </a>
+                    <!--LOGO -->
+                </div>
+                <!--顶部右侧导航-->
+                <ul class="nav navbar-nav pull-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="badge">修改密码</span>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="badge">浏览首页</span>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="badge">更新缓存</span>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="username">退出登录</span>
+                        </a>
+                    </li>
+                </ul>
+                <!--顶部右侧导航-->
+            </div>
+        </header>
+        <!--顶部导航-->
+        <!--主体-->
+        <section id="page">
+            <!-- SIDEBAR -->
+            <div id="sidebar" class="sidebar">
+                <div class="sidebar-menu nav-collapse">
+                    <div class="divide-20"></div>
+                    <!--左侧nav-->
+                    <div id="search-bar">
+                        <input class="search" type="text" placeholder="Search">
+                    </div>
+                    <ul>
+                        <li class="active">
+                            <a href="#">
+                                <span class="menu-text">系统管理</span>
+                            </a>
+                        </li>
+                        <li class="has-sub">
+                            <a href="#">
+                                <span class="menu-text">新闻管理</span>
+                            </a>
+                            <ul class="sub">
+                                <li>
+                                    <a href="#"><span class="sub-menu-text">新闻列表</span></a>
+                                </li>
+                                <li>
+                                    <a href="../fontpage/add.html"><span class="sub-menu-text">添加新闻</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="sub-menu-text">新闻大类</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="sub-menu-text">新闻小类</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span class="menu-text">产品管理</span></a>
+                        </li>
+                        <li>
+                            <a href="#" href="#"><span class="menu-text">下载管理</span></a>
+                        </li>
+                        <li class="has-sub">
+                            <a href="#"><span class="menu-text">人才招聘</span></a>
+                        </li>
+                        <li class="has-sub">
+                            <a href="#"><span class="menu-text">友情链接</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="menu-text">联系我们</span></a>
+                        </li>
+                    </ul>
+                    <!--左侧nav-->
+                </div>
+            </div>
+            <!--右侧内容-->
+            <div id="main-content">
+                <p class="palce">当前操作：新闻管理－》新闻列表</p>
+                <!--             <select class="form-control">
+                <option>［负面信息处理］</option>
+                <option>［解决方案］</option>
+                <option>［常见问题］</option>
+            </select> -->
+                <table class="table table-content table-hover text-center" id="main">
+                    <thead>
+                        <tr>
+                            <th class="text-center">ID</th>
+                            <th class="text-center">新闻类别</th>
+                            <th class="text-center">新闻标题</th>
+                            <th class="text-center">发布者</th>
+                            <th class="text-center">添加时间</th>
+                            <th class="text-center">操作</th>
+                        </tr>
+                    </thead>
+                    <!--                 <tr class="baidunewslist">
+                    <td class="newsid">
+                        <input type="checkbox"><span>1</span>
+                    </td>
+                    <td class="newstype">［负面信息处理］</td>
+                    <td class="newstitle">什么叫网络负面信息处理</td>
+                    <td class="newsauthor">软银客服</td>
+                    <td class="newstime">2009-10-22</td>
+                    <td class="newscontrol"><a class="changenews" href="#">修改</a> <a class="delnews" href="#">删除</a></td>
+                </tr> -->
+                </table>
+                <div class="turnpage">
+                    <!-- <label for="chooseall">全选</label>
+                <input type="checkbox" id="chooseall"> -->
+                    <a href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首页</a>
+                    <a href="">上一页</a>
+                    <a href="">下一页</a>
+                    <a href="">尾页</a>
+                </div>
+                <div id="changecon">
+                    <form>
+                        <p style="display:none">
+                            <label for="news_id">新闻ID</label>
+                            <span id="news_id"></span>
+                        </p>
+                        <p>
+                            <label for="news_title">新闻标题</label>
+                            <input type="text" id="news_title" name="news_title"></input>
+                        </p>
+                        <p>
+                        <label for="news_img">图片地址</label>
+                        <input type="text" id="news_img" name="news_img"></input>
+                    </p>
+                        <p>
+                            <label for="news_date">添加时间</label>
+                            <input type="date" id="news_date" name="news_date"></input>
+                        </p>
+                        <p>
+                            <label for="news_type">新闻类别</label>
+                            <!-- <input type="text" id="news_type" name="news_type"></input> -->
+                            <select name="news_type" id="news_type">
+                                <option value="推荐">推荐</option>
+                                <option value="百家">百家</option>
+                                <option value="本地">本地</option>
+                                <option value="娱乐">娱乐</option>
+                                <option value="社会">社会</option>
+                                <option value="军事">军事</option>
+                                <option value="科技">科技</option>
+                                <option value="女人">女人</option>
+                                <option value="生活">生活</option>
+                                <option value="国际">国际</option>
+                            </select>
+                        </p>
+                        <p>
+                        <label for="news_content">新闻内容</label>
+                        <textarea type="text" id="news_content" name="news_content"></textarea>
+                    </p>
+                        <p>
+                            <label for="news_author">新闻编辑</label>
+                            <input type="text" id="news_author" name="news_author"></input>
+                        </p>
+                        <p>
+                            <input type="submit" value="保存" id="update"></input>
+                            <input type="reset" value="重置"></input>
+                        </p>
+                    </form>
+                </div>
+            </div>
+            <!--右侧内容-->
+        </section>
+        <!--主体-->
+    </div>
+</body>
+
+</html>

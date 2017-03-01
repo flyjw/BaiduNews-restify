@@ -1,0 +1,480 @@
+/*CSS Document*/
+
+@charset "utf-8";
+
+/*百度新闻前台主页*/
+
+body,
+p,
+div,
+input {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+/*     text-align: center; */
+    -webkit-text-size-adjust: none;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#wrapper {
+    /* width: 320px; */
+    height: auto;
+    display: block;
+}
+
+
+/*头部*/
+
+#wrapper #header {
+    width: 100%;
+    height: 120px;
+    margin: 0 auto;
+    background-color: #3e98f0;
+}
+
+#wrapper #header #logo {
+    width: 300px;
+    border-bottom: 1px solid #5dabf0;
+    margin-left: 10px;
+    text-align: center; 
+}
+
+#wrapper #header #logo img {
+    width: 85px;
+    height: 27px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#wrapper #header #newstype ul li {
+    display: block;
+    width: 52px;
+    list-style-type: none;
+    float: left;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+#wrapper #header #newstype ul li a {
+    color: #fff;
+}
+
+
+/*新闻列表*/
+
+#wrapper #newslist {
+    height: 370px;
+    overflow: scroll;
+}
+
+#wrapper #newslist ul li {
+    list-style-type: none;
+    display: block;
+    width: 100%;
+    height: 90px;
+    text-align: left;
+    margin-left: -20px;
+}
+
+#wrapper #newslist ul li img {
+    width: 96px;
+    height: 68px;
+    display: block;
+    float: left;
+    margin-right: 8px;
+}
+
+#wrapper #newslist ul li a {
+    color: #000;
+}
+
+
+/*底部*/
+
+#wrapper #bottom {
+    width: 100%;
+    height: 45px;
+    background-color: #3e98f0;
+    position: absolute;
+    bottom: 10px;
+}
+
+#wrapper #bottom ul {
+    margin-left: -15px;
+}
+
+#wrapper #bottom ul li {
+    list-style-type: none;
+    display: block;
+    float: left;
+    width: 90px;
+}
+
+#wrapper #bottom ul li a {
+    color: #fff;
+}
+
+/* 后台主页 */
+/*顶部导航*/
+body{
+    background: none repeat scroll 0 0 #f4f4f4;
+}
+.navbar {
+    background: none repeat scroll 0 0 #5e87b0;
+    border: none;
+    border-radius: 0;
+    margin: 0;
+}
+
+.navbar .navbar-brand {
+    float: left;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 15px;
+    width: 250px;
+}
+
+.navbar .navbar-brand img {
+    position: absolute;
+    max-width: 60%;
+    height: 30px;
+    width: 120px;
+    top: 8px;
+    left: 60px;
+}
+
+.navbar .dropdown-toggle {
+    color: #FFFFFF;
+    height: 51px;
+}
+
+.navbar .dropdown-toggle .badge {
+    background-color: #f9c263;
+    font-size: 14px !important;
+    font-weight: 300;
+    height: 19px;
+    padding: 2px 6px;
+    text-align: center;
+    top: 8px;
+}
+
+.navbar .dropdown-toggle .username {
+    font-weight: 600;
+}
+
+.navbar .nav > li > a:hover,
+.navbar .nav > li > a:focus,
+.navbar .nav .open > a,
+.navbar .nav .open > a:hover,
+.navbar .nav .open > a:focus {
+    background-color: #80a0c1 !important;
+}
+
+
+/*顶部导航*/
+
+
+/*主体*/
+
+#sidebar {
+    background: none repeat scroll 0 0 #f4f4f4;
+    padding: 0 !important;
+    width: 250px;
+    position: absolute;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.sidebar-fixed {
+    position: fixed !important;
+}
+
+#sidebar * {
+    text-overflow: ellipsis;
+}
+
+.sidebar-menu > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 15px;
+    border-bottom: 1px solid #FFFFFF !important;
+    border-top: 1px solid #FFFFFF !important;
+}
+
+.sidebar-menu > ul > li {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0px;
+}
+
+.sidebar-menu > ul > li > a {
+    display: block;
+    position: relative;
+    margin: 0;
+    border: 0 none;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.sidebar-menu > ul > li.has-sub {
+    position: relative;
+}
+
+.sidebar-menu > ul > li.has-sub .sub {
+    position: relative;
+    background: #e7e7e7;
+    border-top: 1px solid #e7e7e7;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) inset;
+}
+
+.sidebar-menu > ul > li > ul.sub:before {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #3b3b3b;
+    border-image: none;
+    border-style: dotted;
+    border-width: 0 0 0 1px;
+    bottom: 0;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.sidebar-menu > ul > li > ul.sub > li:before {
+    border-top: 1px dotted #3b3b3b;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 17px;
+    margin: 5% -42% 0;
+}
+
+.sidebar-menu > ul > li > ul.sub .has-sub-sub ul.sub-sub {
+    display: none;
+    list-style: none;
+    clear: both;
+}
+
+.sidebar-menu > ul > li.active > ul.sub {
+    display: block;
+}
+
+.sidebar-menu > ul > li.active > ul.sub .has-sub-sub ul.sub-sub {
+    display: block;
+}
+
+.sidebar-menu > ul > li > ul.sub > li,
+.sidebar-menu > ul > li > ul.sub .has-sub-sub ul.sub-sub > li {
+    background: none;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 1px !important;
+}
+
+.sidebar-menu > ul > li > ul.sub > li > a {
+    display: block;
+    margin: 0px 0px 0px 0px;
+    padding: 5px 0px;
+    padding-left: 30px !important;
+    color: #555555;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 300;
+    background: none;
+    text-align: left;
+}
+
+.sidebar-menu > ul > li > ul.sub > li > a:hover {
+    text-decoration: underline;
+}
+
+.sidebar-menu > ul > li > ul.sub .has-sub-sub ul.sub-sub > li > a {
+    display: block;
+    margin: 0px 0px 0px 0px;
+    padding: 5px 0px;
+    padding-left: 30px !important;
+    color: #555555;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 300;
+    background: none;
+}
+
+.sidebar-menu > ul > li > a {
+    border-bottom: 1px solid #ffffff !important;
+    border-top: 1px solid #e7e7e7 !important;
+    color: #555555 !important;
+}
+
+.sidebar-menu > ul > li.has-sub.open > a,
+.sidebar-menu > ul > li > a:hover,
+.sidebar-menu > ul > li:hover > a {
+    background: #ffffff;
+}
+
+.sidebar-menu > ul > li.active > a {
+    background: #dbdbdb !important;
+    border-top-color: transparent !important;
+    color: #fff;
+}
+
+.sidebar-menu #search-bar {
+    display: block;
+    text-align: center;
+}
+
+.sidebar-menu #search-bar .search {
+    background: none repeat scroll 0 0 #ffffff;
+    border: 0 none;
+    border-radius: 4px;
+    color: #555555;
+    padding: 8px 10px;
+    width: 90%;
+    margin: 20px auto 10px;
+    padding-right: 30px !important;
+}
+
+#main-content {
+    width: 82%;
+    margin-left: 260px;
+}
+
+#main-content tr:hover {
+    background-color: #ffffff;
+}
+
+#main-content p {
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    background-color: #99bee1;
+    border-radius: 3px;
+    padding-left: 15px;
+    text-align: left;
+}
+
+#changecon form{
+    display: none;
+    width: 700px;
+    height: 0px;
+    position: fixed;
+    top:30%;
+    left:30%;
+}
+
+#main-content #changecon form input{
+    height: 30px;
+}
+
+#main-content #changecon form textarea{
+    height: 30px;
+}
+/*添加新闻*/
+
+#main-content_addnews p {
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    background-color: #99bee1;
+    padding-left: 20px;
+}
+.addnews{
+    text-decoration: underline;
+}
+/*添加新闻*/
+#main-content select {
+    width: 300px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+#main-content .turnpage label {
+    margin-left: 30px;
+}
+
+#main-content .turnpage input {
+    margin-right: 77%;
+}
+
+/*主体*/
+
+/* 登录页面 */
+.row {
+    background: #fff;
+    box-shadow: 3px 3px 3px #ccc;
+    width: 600px;
+    border-radius: 10px;
+    margin: 10% auto;
+    padding: 30px 0px 50px;
+}
+
+.login-box-plain {
+    width: 400px;
+}
+
+.btn {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.bigintro img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 30px;
+}
+/* 添加页面 */
+#page .edit {
+    width: 100%;
+    height: 700px;
+    margin-top: -10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: #d0ddf0;
+}
+
+#page .edit form {
+    margin-left: 350px;
+}
+#page .edit form label{
+    height: 50px;
+    line-height: 50px;
+}
+#page .edit form input{
+    width: 430px;
+}
+
+#page .edit form input[type="submit"],#page .edit form input[type="reset"]{
+    width: 100px;
+    height: 30px;
+}
+
+#page .edit form textarea{
+    width: 40%;
+    height: 50px;
+    vertical-align: top;
+}
+
+#main-content_addnews p {
+    height: 50px;
+    line-height: 50px;
+    font-size: 15px;
+    background-color: #99bee1;
+    padding-left: 350px;
+}
